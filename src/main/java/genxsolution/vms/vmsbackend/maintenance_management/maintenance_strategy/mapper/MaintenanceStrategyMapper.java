@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.maintenance_management.maintenance_strategy.mapper;
+import genxsolution.vms.vmsbackend.maintenance_management.maintenance_strategy.dto.MaintenanceStrategyResponse; import genxsolution.vms.vmsbackend.maintenance_management.maintenance_strategy.model.MaintenanceStrategy; import org.springframework.stereotype.Component;
+@Component public class MaintenanceStrategyMapper { public MaintenanceStrategyResponse toResponse(MaintenanceStrategy m){ return new MaintenanceStrategyResponse(m.strategyId(),m.companyId(),m.companyCode(),m.strategyName(),m.strategyTypeId(),m.description()); } }

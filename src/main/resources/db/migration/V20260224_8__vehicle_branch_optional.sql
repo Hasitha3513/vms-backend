@@ -1,0 +1,2 @@
+ALTER TABLE IF EXISTS vehicle
+    ALTER COLUMN branch_id DROP NOT NULL;

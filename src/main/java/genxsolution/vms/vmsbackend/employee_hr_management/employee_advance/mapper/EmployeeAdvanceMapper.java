@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.employee_hr_management.employee_advance.mapper;
+import genxsolution.vms.vmsbackend.employee_hr_management.employee_advance.dto.EmployeeAdvanceResponse; import genxsolution.vms.vmsbackend.employee_hr_management.employee_advance.model.EmployeeAdvance; import org.springframework.stereotype.Component;
+@Component public class EmployeeAdvanceMapper { public EmployeeAdvanceResponse toResponse(EmployeeAdvance m){ return new EmployeeAdvanceResponse(m.advanceId(),m.companyId(),m.companyCode(),m.employeeId(),m.issuedDate(),m.amount(),m.balance(),m.purpose(),m.statusId(),m.createdAt()); } }

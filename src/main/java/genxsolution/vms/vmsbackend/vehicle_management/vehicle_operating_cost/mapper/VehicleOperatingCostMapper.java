@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.vehicle_management.vehicle_operating_cost.mapper;
+import genxsolution.vms.vmsbackend.vehicle_management.vehicle_operating_cost.dto.VehicleOperatingCostResponse; import genxsolution.vms.vmsbackend.vehicle_management.vehicle_operating_cost.model.VehicleOperatingCost; import org.springframework.stereotype.Component;
+@Component public class VehicleOperatingCostMapper { public VehicleOperatingCostResponse toResponse(VehicleOperatingCost m){ return new VehicleOperatingCostResponse(m.costId(),m.companyId(),m.companyCode(),m.vehicleId(),m.costDate(),m.costTypeId(),m.description(),m.amount(),m.odometerKm(),m.referenceType(),m.referenceId(),m.createdAt()); } }

@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.maintenance_management.maintenance_assignment.mapper;
+import genxsolution.vms.vmsbackend.maintenance_management.maintenance_assignment.dto.MaintenanceAssignmentResponse; import genxsolution.vms.vmsbackend.maintenance_management.maintenance_assignment.model.MaintenanceAssignment; import org.springframework.stereotype.Component;
+@Component public class MaintenanceAssignmentMapper { public MaintenanceAssignmentResponse toResponse(MaintenanceAssignment m){ return new MaintenanceAssignmentResponse(m.assignmentId(),m.companyId(),m.companyCode(),m.breakdownId(),m.maintenanceId(),m.technicianId(),m.assignedAt(),m.startedAt(),m.completedAt(),m.statusId(),m.notes()); } }

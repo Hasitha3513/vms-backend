@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.employee_hr_management.employee_advance.dto;
+import java.math.BigDecimal; import java.time.LocalDate; import java.util.UUID;
+public record EmployeeAdvanceUpsertRequest(UUID companyId, String companyCode, UUID employeeId, LocalDate issuedDate, BigDecimal amount, BigDecimal balance, String purpose, Integer statusId) {}

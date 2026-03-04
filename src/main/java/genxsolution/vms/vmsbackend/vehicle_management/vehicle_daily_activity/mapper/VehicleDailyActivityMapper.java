@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.vehicle_management.vehicle_daily_activity.mapper;
+import genxsolution.vms.vmsbackend.vehicle_management.vehicle_daily_activity.dto.VehicleDailyActivityResponse; import genxsolution.vms.vmsbackend.vehicle_management.vehicle_daily_activity.model.VehicleDailyActivity; import org.springframework.stereotype.Component;
+@Component public class VehicleDailyActivityMapper { public VehicleDailyActivityResponse toResponse(VehicleDailyActivity m){ return new VehicleDailyActivityResponse(m.activityId(),m.companyId(),m.companyCode(),m.vehicleId(),m.driverId(),m.projectId(),m.activityDate(),m.startTime(),m.endTime(),m.startOdometerKm(),m.endOdometerKm(),m.engineHours(),m.distanceKm(),m.workDescription(),m.remarks(),m.createdAt()); } }

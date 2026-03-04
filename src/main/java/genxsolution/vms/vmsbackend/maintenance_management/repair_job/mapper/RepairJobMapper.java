@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.maintenance_management.repair_job.mapper;
+import genxsolution.vms.vmsbackend.maintenance_management.repair_job.dto.RepairJobResponse; import genxsolution.vms.vmsbackend.maintenance_management.repair_job.model.RepairJob; import org.springframework.stereotype.Component;
+@Component public class RepairJobMapper { public RepairJobResponse toResponse(RepairJob m){ return new RepairJobResponse(m.repairJobId(),m.companyId(),m.companyCode(),m.breakdownId(),m.repairTypeId(),m.diagnosisNotes(),m.decidedSolution(),m.estimatedCost(),m.actualCost(),m.startDate(),m.completionDate(),m.statusId(),m.createdBy(),m.createdAt(),m.updatedAt()); } }

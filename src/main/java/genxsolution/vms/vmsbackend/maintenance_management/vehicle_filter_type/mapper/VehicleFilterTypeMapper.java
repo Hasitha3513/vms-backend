@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.maintenance_management.vehicle_filter_type.mapper;
+import genxsolution.vms.vmsbackend.maintenance_management.vehicle_filter_type.dto.VehicleFilterTypeResponse; import genxsolution.vms.vmsbackend.maintenance_management.vehicle_filter_type.model.VehicleFilterType; import org.springframework.stereotype.Component;
+@Component public class VehicleFilterTypeMapper { public VehicleFilterTypeResponse toResponse(VehicleFilterType m){ return new VehicleFilterTypeResponse(m.filterTypeId(),m.companyId(),m.companyCode(),m.filterName(),m.filterCode(),m.description(),m.typicalLifeKm(),m.typicalLifeHours(),m.typicalLifeMonths()); } }

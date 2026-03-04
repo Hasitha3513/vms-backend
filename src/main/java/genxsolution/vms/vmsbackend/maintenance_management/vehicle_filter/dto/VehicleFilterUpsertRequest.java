@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.maintenance_management.vehicle_filter.dto;
+import java.util.UUID; import java.time.LocalDate; import java.math.BigDecimal;
+public record VehicleFilterUpsertRequest(UUID companyId, String companyCode, UUID vehicleId, UUID filterTypeId, String serialNumber, LocalDate installedDate, BigDecimal installedOdometerKm, BigDecimal installedEngineHours, BigDecimal recommendedReplacementKm, BigDecimal recommendedReplacementHours, LocalDate actualReplacementDate, BigDecimal actualReplacementKm, BigDecimal actualReplacementHours, String replacementReason, Integer statusId) {}

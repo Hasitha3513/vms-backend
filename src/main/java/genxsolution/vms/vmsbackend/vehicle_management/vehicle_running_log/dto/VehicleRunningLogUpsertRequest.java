@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.vehicle_management.vehicle_running_log.dto;
+import java.util.UUID; import java.time.Instant; import java.time.LocalDate; import java.math.BigDecimal;
+public record VehicleRunningLogUpsertRequest(UUID companyId, String companyCode, UUID vehicleId, UUID driverId, UUID projectId, LocalDate logDate, Instant startTime, Instant endTime, BigDecimal startOdometer, BigDecimal endOdometer, BigDecimal totalDistance, BigDecimal engineHours, BigDecimal fuelConsumed, Integer workTypeId, String workDescription, BigDecimal loadCapacityUsed, Integer tripsCount, String operatorSignature, UUID supervisorApproval) {}

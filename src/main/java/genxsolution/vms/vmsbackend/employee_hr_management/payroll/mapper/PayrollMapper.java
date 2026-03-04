@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.employee_hr_management.payroll.mapper;
+import genxsolution.vms.vmsbackend.employee_hr_management.payroll.dto.PayrollResponse; import genxsolution.vms.vmsbackend.employee_hr_management.payroll.model.Payroll; import org.springframework.stereotype.Component;
+@Component public class PayrollMapper { public PayrollResponse toResponse(Payroll m){ return new PayrollResponse(m.payrollId(),m.companyId(),m.companyCode(),m.employeeId(),m.payrollMonth(),m.payrollYear(),m.basicSalary(),m.overtimeHours(),m.overtimeAmount(),m.rationTotal(),m.allowancesTotal(),m.advanceDeductions(),m.otherDeductions(),m.netSalary(),m.paymentDate(),m.paymentMethodId(),m.statusId(),m.createdAt()); } }

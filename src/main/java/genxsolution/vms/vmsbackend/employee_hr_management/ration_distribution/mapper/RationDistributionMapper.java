@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.employee_hr_management.ration_distribution.mapper;
+import genxsolution.vms.vmsbackend.employee_hr_management.ration_distribution.dto.RationDistributionResponse; import genxsolution.vms.vmsbackend.employee_hr_management.ration_distribution.model.RationDistribution; import org.springframework.stereotype.Component;
+@Component public class RationDistributionMapper { public RationDistributionResponse toResponse(RationDistribution m){ return new RationDistributionResponse(m.rationId(),m.companyId(),m.companyCode(),m.employeeId(),m.projectId(),m.rationDate(),m.mealsCount(),m.amount(),m.notes(),m.createdAt()); } }

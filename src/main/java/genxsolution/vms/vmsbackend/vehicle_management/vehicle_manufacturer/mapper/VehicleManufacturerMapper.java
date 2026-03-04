@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.vehicle_management.vehicle_manufacturer.mapper;
+import genxsolution.vms.vmsbackend.vehicle_management.vehicle_manufacturer.dto.VehicleManufacturerResponse; import genxsolution.vms.vmsbackend.vehicle_management.vehicle_manufacturer.model.VehicleManufacturer; import org.springframework.stereotype.Component;
+@Component public class VehicleManufacturerMapper { public VehicleManufacturerResponse toResponse(VehicleManufacturer m){ return new VehicleManufacturerResponse(m.manufacturerId(),m.manufacturerName(),m.manufacturerCode(),m.manufacturerBrand(),m.country(),m.logoUrl(),m.website(),m.supportPhone(),m.supportEmail(),m.description(),m.isActive(),m.createdAt(),m.updatedAt()); } }

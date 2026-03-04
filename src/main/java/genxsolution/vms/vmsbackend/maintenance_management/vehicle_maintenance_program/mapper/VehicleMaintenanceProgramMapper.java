@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.maintenance_management.vehicle_maintenance_program.mapper;
+import genxsolution.vms.vmsbackend.maintenance_management.vehicle_maintenance_program.dto.VehicleMaintenanceProgramResponse; import genxsolution.vms.vmsbackend.maintenance_management.vehicle_maintenance_program.model.VehicleMaintenanceProgram; import org.springframework.stereotype.Component;
+@Component public class VehicleMaintenanceProgramMapper { public VehicleMaintenanceProgramResponse toResponse(VehicleMaintenanceProgram m){ return new VehicleMaintenanceProgramResponse(m.vehicleProgramId(),m.companyId(),m.companyCode(),m.vehicleId(),m.programId(),m.startDate(),m.endDate(),m.isActive(),m.createdAt()); } }

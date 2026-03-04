@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.maintenance_management.maintenance_record.dto;
+import java.util.UUID; import java.time.Instant; import java.math.BigDecimal; import java.time.LocalDate;
+public record MaintenanceRecordUpsertRequest(UUID companyId, String companyCode, UUID vehicleId, UUID scheduleId, UUID breakdownId, UUID standardId, Instant startTime, Instant endTime, BigDecimal odometerKm, BigDecimal engineHours, String workPerformed, String partsUsed, String lubricantsUsed, BigDecimal laborCost, BigDecimal partsCost, BigDecimal lubricantsCost, BigDecimal otherCost, BigDecimal totalCost, LocalDate nextServiceDate, BigDecimal nextServiceOdometerKm, Integer statusId, UUID createdBy, UUID approvedBy, Instant approvedAt) {}

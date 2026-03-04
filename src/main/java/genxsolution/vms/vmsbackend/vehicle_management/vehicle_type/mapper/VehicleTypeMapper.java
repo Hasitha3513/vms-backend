@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.vehicle_management.vehicle_type.mapper;
+import genxsolution.vms.vmsbackend.vehicle_management.vehicle_type.dto.VehicleTypeResponse; import genxsolution.vms.vmsbackend.vehicle_management.vehicle_type.model.VehicleType; import org.springframework.stereotype.Component;
+@Component public class VehicleTypeMapper { public VehicleTypeResponse toResponse(VehicleType m){ return new VehicleTypeResponse(m.typeId(),m.categoryId(),m.typeName(),m.bodyStyleId(),m.fuelTypeId(),m.undercarriageTypeId(),m.numberOfWheels(),m.seatingCapacityMin(),m.seatingCapacityMax(),m.usageType(),m.serviceIntervalKm(),m.serviceIntervalMonths(),m.serviceIntervalHours(),m.oilChangeIntervalKm(),m.description(),m.isActive(),m.createdAt(),m.updatedAt()); } }

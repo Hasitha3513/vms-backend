@@ -1,0 +1,46 @@
+package genxsolution.vms.vmsbackend.vehicle_management.hired_vehicle.dto;
+
+import java.math.BigDecimal;
+import java.util.UUID;
+
+public record HiredVehicleUpsertRequest(
+        UUID supplierId,
+        String supplierCode,
+        UUID hiredVehicleType,
+        UUID hiredVehicleModel,
+        UUID categoryId,
+        UUID hiredVehicleManufacture,
+        String registrationNumber,
+        String chassisNumber,
+        String engineNumber,
+        String keyNumber,
+        String vehicleImage,
+        Integer manufactureYear,
+        String color,
+        Integer fuelTypeId,
+        Integer transmissionTypeId,
+        Integer numberPlateTypeId,
+        Integer bodyStyleId,
+        Integer seatingCapacity,
+        Integer undercarriageTypeId,
+        Integer engineTypeId,
+        Integer engineManufactureId,
+        BigDecimal initialOdometerKm,
+        BigDecimal currentOdometerKm,
+        BigDecimal totalEngineHours,
+        Integer consumptionMethodId,
+        BigDecimal ratedEfficiencyKmpl,
+        BigDecimal ratedConsumptionLph,
+        Integer ownershipTypeId,
+        String currentOwnership,
+        Integer previousOwnersCount,
+        UUID manufactureId,
+        UUID distributorId,
+        String vehicleCondition,
+        Integer operationalStatusId,
+        Integer vehicleStatusId,
+        String notes,
+        Boolean isActive,
+        UUID createdBy,
+        UUID updatedBy
+) {}

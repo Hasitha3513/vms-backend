@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.maintenance_management.maintenance_plan.mapper;
+import genxsolution.vms.vmsbackend.maintenance_management.maintenance_plan.dto.MaintenancePlanResponse; import genxsolution.vms.vmsbackend.maintenance_management.maintenance_plan.model.MaintenancePlan; import org.springframework.stereotype.Component;
+@Component public class MaintenancePlanMapper { public MaintenancePlanResponse toResponse(MaintenancePlan m){ return new MaintenancePlanResponse(m.planId(),m.companyId(),m.companyCode(),m.vehicleId(),m.planName(),m.planTypeId(),m.startDate(),m.endDate(),m.totalEstimatedCost(),m.statusId(),m.createdBy(),m.createdAt()); } }

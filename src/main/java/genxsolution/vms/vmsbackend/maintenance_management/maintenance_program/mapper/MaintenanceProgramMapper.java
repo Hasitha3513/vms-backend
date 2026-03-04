@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.maintenance_management.maintenance_program.mapper;
+import genxsolution.vms.vmsbackend.maintenance_management.maintenance_program.dto.MaintenanceProgramResponse; import genxsolution.vms.vmsbackend.maintenance_management.maintenance_program.model.MaintenanceProgram; import org.springframework.stereotype.Component;
+@Component public class MaintenanceProgramMapper { public MaintenanceProgramResponse toResponse(MaintenanceProgram m){ return new MaintenanceProgramResponse(m.programId(),m.companyId(),m.companyCode(),m.programName(),m.programTypeId(),m.description(),m.isActive(),m.createdAt()); } }

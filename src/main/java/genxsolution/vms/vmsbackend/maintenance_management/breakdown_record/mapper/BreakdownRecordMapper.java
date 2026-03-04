@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.maintenance_management.breakdown_record.mapper;
+import genxsolution.vms.vmsbackend.maintenance_management.breakdown_record.dto.BreakdownRecordResponse; import genxsolution.vms.vmsbackend.maintenance_management.breakdown_record.model.BreakdownRecord; import org.springframework.stereotype.Component;
+@Component public class BreakdownRecordMapper { public BreakdownRecordResponse toResponse(BreakdownRecord m){ return new BreakdownRecordResponse(m.breakdownId(),m.companyId(),m.companyCode(),m.vehicleId(),m.driverId(),m.projectId(),m.breakdownAt(),m.location(),m.odometerKm(),m.breakdownTypeId(),m.severityId(),m.description(),m.repairCategoryId(),m.repairLocationId(),m.statusId(),m.createdAt()); } }

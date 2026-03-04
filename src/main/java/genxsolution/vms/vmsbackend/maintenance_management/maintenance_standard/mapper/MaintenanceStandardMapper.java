@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.maintenance_management.maintenance_standard.mapper;
+import genxsolution.vms.vmsbackend.maintenance_management.maintenance_standard.dto.MaintenanceStandardResponse; import genxsolution.vms.vmsbackend.maintenance_management.maintenance_standard.model.MaintenanceStandard; import org.springframework.stereotype.Component;
+@Component public class MaintenanceStandardMapper { public MaintenanceStandardResponse toResponse(MaintenanceStandard m){ return new MaintenanceStandardResponse(m.standardId(),m.companyId(),m.companyCode(),m.typeId(),m.strategyId(),m.standardCode(),m.name(),m.categoryId(),m.intervalKm(),m.intervalMonths(),m.intervalEngineHours(),m.checklist(),m.isActive()); } }

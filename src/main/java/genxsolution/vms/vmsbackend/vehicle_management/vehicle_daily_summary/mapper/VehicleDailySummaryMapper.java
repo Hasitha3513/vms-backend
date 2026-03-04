@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.vehicle_management.vehicle_daily_summary.mapper;
+import genxsolution.vms.vmsbackend.vehicle_management.vehicle_daily_summary.dto.VehicleDailySummaryResponse; import genxsolution.vms.vmsbackend.vehicle_management.vehicle_daily_summary.model.VehicleDailySummary; import org.springframework.stereotype.Component;
+@Component public class VehicleDailySummaryMapper { public VehicleDailySummaryResponse toResponse(VehicleDailySummary m){ return new VehicleDailySummaryResponse(m.summaryId(),m.companyId(),m.companyCode(),m.vehicleId(),m.summaryDate(),m.totalDistance(),m.totalEngineHours(),m.totalFuelConsumed(),m.avgFuelEfficiency(),m.totalTrips(),m.operationalHours(),m.idleHours(),m.maintenanceHours(),m.createdAt()); } }

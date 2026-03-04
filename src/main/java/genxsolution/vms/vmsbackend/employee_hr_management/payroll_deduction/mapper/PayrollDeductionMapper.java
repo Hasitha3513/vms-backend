@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.employee_hr_management.payroll_deduction.mapper;
+import genxsolution.vms.vmsbackend.employee_hr_management.payroll_deduction.dto.PayrollDeductionResponse; import genxsolution.vms.vmsbackend.employee_hr_management.payroll_deduction.model.PayrollDeduction; import org.springframework.stereotype.Component;
+@Component public class PayrollDeductionMapper { public PayrollDeductionResponse toResponse(PayrollDeduction m){ return new PayrollDeductionResponse(m.payDedId(),m.companyId(),m.companyCode(),m.payrollId(),m.deductionTypeId(),m.referenceId(),m.amount(),m.note()); } }

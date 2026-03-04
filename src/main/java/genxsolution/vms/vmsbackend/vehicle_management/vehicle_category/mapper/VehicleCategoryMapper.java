@@ -1,0 +1,3 @@
+package genxsolution.vms.vmsbackend.vehicle_management.vehicle_category.mapper;
+import genxsolution.vms.vmsbackend.vehicle_management.vehicle_category.dto.VehicleCategoryResponse; import genxsolution.vms.vmsbackend.vehicle_management.vehicle_category.model.VehicleCategory; import org.springframework.stereotype.Component;
+@Component public class VehicleCategoryMapper { public VehicleCategoryResponse toResponse(VehicleCategory m){ return new VehicleCategoryResponse(m.categoryId(),m.categoryName(),m.categoryCode(),m.categoryTypeId(),m.description(),m.iconUrl(),m.isActive(),m.createdAt(),m.updatedAt()); } }
